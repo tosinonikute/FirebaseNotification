@@ -40,31 +40,17 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         //Log.d(TAG, "From: " + remoteMessage.getNotification().getBody());
         Log.d(TAG, "From: " + remoteMessage.getData().size());
         Log.d(TAG, "From: " + remoteMessage.getData());
-
+        Log.d(TAG, "From: " + data.toString());
 
         final Map<String, String> data = remoteMessage.getData();
-        Log.d(TAG, "From: " + data.toString());
-        // Get a handler that can be used to post to the main thread
-            Handler mainHandler = new Handler(getApplicationContext().getMainLooper());
-            Runnable myRunnable = new Runnable() {
-                @Override
-                public void run() {
-
-                    String title = data.get("title");
-                    String body = data.get("body");
-                    String imageUrl = data.get("imageUrl");
-                    if(imageUrl.equals("") && !title.equals("") && !title.equals("")) {
-                        new generatePictureStyleNotification(getApplicationContext(), title, body, imageUrl).execute();
-                    }
-                } // This is your code
-            };
-            mainHandler.post(myRunnable);
-
-
-
-
-
-
+        String title = data.get("title");
+        String body = data.get("body");
+        sendNotificationData(title, body);
+        
+        //If sending an image notification style
+        //String imageUrl = data.get("imageUrl");
+        //new generatePictureStyleNotification(getApplicationContext(), title, body, imageUrl).execute();
+        
     }
 
     private void sendNotification(String messageBody) {
