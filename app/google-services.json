@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "697132753884",
+    "firebase_url": "https://fir-demo-f8f8a.firebaseio.com",
+    "project_id": "fir-demo-f8f8a",
+    "storage_bucket": "fir-demo-f8f8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697132753884:android:33a04ec71aa1a2bf",
+        "android_client_info": {
+          "package_name": "com.example.tosin.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697132753884-f23b9l4mdu31c7hhv2bgslctql86ml50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSMz-mu0Y0IOiWdK9IOFnLyAodf6kVc0I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
