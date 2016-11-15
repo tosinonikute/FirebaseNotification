@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:697132753884:android:33a04ec71aa1a2bf",
         "android_client_info": {
-          "package_name": "com.example.tosin.myapplication"
+          "package_name": "com.example.firebase.notification"
         }
       },
       "oauth_client": [
