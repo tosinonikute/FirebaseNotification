@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
+
 
 android {
     compileSdkVersion 23
@@ -28,3 +28,5 @@ dependencies {
     compile 'com.google.firebase:firebase-messaging:9.2.0'
     compile 'com.github.bumptech.glide:glide:3.6.0'
 }
+
+apply plugin: 'com.google.gms.google-services'
